@@ -9,4 +9,8 @@ public class HelloWorldController {
     public String sayHello() {
         return "Hello Spring Boot - new deployment using Openshift Pipeline";
     }
+    @RequestMapping("/")
+    public String sayHelloWithoutPath() {
+        return "Hello Spring Boot - new deployment using Openshift Pipeline Without PATH";
+    }
 }
